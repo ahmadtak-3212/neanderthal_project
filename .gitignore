@@ -1,0 +1,96 @@
+# ---- private: budget, receipts, invoices ----
+admin/
+
+# ---- OS / editors ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.history/
+*.code-workspace.bak
+
+# ---- KiCad ----
+*-backups/
+*.lck
+*.bak
+*.kicad_sch-bak
+*.kicad_sch_old
+_autosave-*
+~_autosave-*
+\#auto_saved_files#
+fp-info-cache
+*.kicad_prl
+
+# ---- SolidWorks / Fusion / slicers ----
+~$*
+*.SLDBAK
+*.swp~
+
+# ---- PlatformIO / embedded ----
+.pio/
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/ipch/
+.vscode/.browse.c_cpp.db*
+*.elf
+*.hex
+*.map
+
+# ---- Vivado / Vitis / PetaLinux ----
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+*.ip_user_files/
+*.gen/
+.Xil/
+*.jou
+*.log
+*.str
+vivado_pid*.zip
+_ide/
+**/build/
+**/components/yocto/
+**/images/linux/
+
+# Vivado IP output products are regenerated from the .xci; keep only the IP config and memory-init files
+**/sources_1/ip/*/*
+!**/sources_1/ip/*/*.xci
+!**/sources_1/ip/*/*.coe
+!**/sources_1/ip/*/*.mif
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---- Node / web ----
+node_modules/
+dist/
+.next/
+.env
+.env.local
+
+# ---- MATLAB ----
+*.asv
+*.autosave
+
+# ---- Bluespec (bsc) build outputs ----
+*.bo
+*.ba
+*.so
+*.o
+*.cxx
+*.h.gch
+*.sched
+output.log
+**/Beveren
+**/DelayLine
+**/MainMem
+**/multicycle
+**/top_bsv
+**/top_pipelined
+# keep the prebuilt RISC-V test programs (rebuilding them needs a riscv64 toolchain)
+!**/test/build/
+!**/test/build/*.hex

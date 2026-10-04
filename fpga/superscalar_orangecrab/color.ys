@@ -1,0 +1,13 @@
+read_verilog BRAM1.v
+read_verilog BRAM2.v
+read_verilog BRAM2BE.v
+read_verilog BRAM2Load.v
+read_verilog FIFO1.v
+read_verilog FIFO2.v
+read_verilog RevertReg.v
+read_verilog SizedFIFO.v
+read_verilog gsd_orange.v
+read_verilog litedram.v
+read_verilog sim.v
+synth_ecp5 -top top
+write_json "color.json"

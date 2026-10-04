@@ -1,0 +1,15 @@
+/Makefile
+/autom4te.cache
+/config.log
+/config.status
+*.o
+*.swp
+/.deps
+/test-driver
+*.log
+*.trs
+*.swo
+/*.tar.gz
+/freedom-bin2hex
+/elf2hex
+/bin2hex

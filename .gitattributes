@@ -1,0 +1,32 @@
+# Normalize text line endings (stops the CRLF/LF "every file modified" noise between Windows and Linux)
+* text=auto
+
+# Optional: large binary design files -> Git LFS. To enable, install git-lfs, run `git lfs install`,
+# and uncomment these lines BEFORE the first commit of those files.
+# *.SLDPRT filter=lfs diff=lfs merge=lfs -text
+# *.SLDASM filter=lfs diff=lfs merge=lfs -text
+# *.SLDDRW filter=lfs diff=lfs merge=lfs -text
+# *.sldprt filter=lfs diff=lfs merge=lfs -text
+# *.sldasm filter=lfs diff=lfs merge=lfs -text
+# *.f3d    filter=lfs diff=lfs merge=lfs -text
+# *.step   filter=lfs diff=lfs merge=lfs -text
+# *.STEP   filter=lfs diff=lfs merge=lfs -text
+# *.stp    filter=lfs diff=lfs merge=lfs -text
+# *.stl    filter=lfs diff=lfs merge=lfs -text
+# *.STL    filter=lfs diff=lfs merge=lfs -text
+# *.3mf    filter=lfs diff=lfs merge=lfs -text
+# *.wrl    filter=lfs diff=lfs merge=lfs -text
+# *.pdf    filter=lfs diff=lfs merge=lfs -text
+# *.mat    filter=lfs diff=lfs merge=lfs -text
+# *.zip    filter=lfs diff=lfs merge=lfs -text
+# *.xsa    filter=lfs diff=lfs merge=lfs -text
+# *.mp4    filter=lfs diff=lfs merge=lfs -text
+
+# Text design files: diff as text, never LFS
+*.kicad_pcb text
+*.kicad_sch text
+*.kicad_pro text
+*.kicad_sym text
+*.kicad_mod text
+*.gbr text
+*.drl text
